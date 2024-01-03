@@ -16,6 +16,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.unit.dp
 import com.hftamayo.onboardingscreens.ui.theme.OnBoardingScreensTheme
 
 class MainActivity : ComponentActivity() {
@@ -46,12 +47,38 @@ fun MainLayout() {
                     horizontalArrangement = Arrangement.End,
                     modifier = Modifier
                         .fillMaxWidth()
+                        .padding(top = 100.dp)
                     ,
                 ){
                     Image(painterResource(id = R.drawable.image),
                     contentDescription = "",
                     contentScale = ContentScale.FillWidth,
+                        alignment = Alignment.TopEnd,
                     )
+                }
+                Column (
+                    verticalArrangement = Arrangement.Top,
+                    horizontalAlignment = Alignment.Start,
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(10.dp)
+                ){
+                    Spacer(modifier = Modifier
+                        .background(color = Color.White)
+                        .height(3.dp)
+                        .width(200.dp)
+                        .padding(bottom = 20.dp)
+                    )
+                    Spacer(modifier = Modifier
+                        .padding(bottom = 20.dp)
+                    )
+                    Spacer(modifier = Modifier
+                        .background(color = Color.White)
+                        .height(3.dp)
+                        .width(240.dp)
+
+                    )
+
                 }
                 
             }
