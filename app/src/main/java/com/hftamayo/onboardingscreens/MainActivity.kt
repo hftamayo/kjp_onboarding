@@ -31,9 +31,9 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun MainLayout() {
     val primaryColor = Color(26, 32, 53, 255)
-    NewJetTheme() {
+    OnBoardingScreensTheme() {
         Surface(
-            color = MaterialTheme.colors.background
+            color = MaterialTheme.colorScheme.background,
         ){
             Column(modifier = Modifier
                 .background(color = primaryColor)
@@ -50,7 +50,7 @@ fun MainLayout() {
                         .padding(top = 100.dp)
                     ,
                 ){
-                    Image(painterResource(id = R.drawable.image),
+                    Image(painterResource(id = R.drawable.logo),
                     contentDescription = "",
                     contentScale = ContentScale.FillWidth,
                         alignment = Alignment.TopEnd,
