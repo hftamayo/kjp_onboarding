@@ -130,17 +130,19 @@ fun MainLayout() {
                     horizontalArrangement = Arrangement.SpaceEvenly,
                     modifier = Modifier
                         .fillMaxWidth()
-                    .padding(bottom = 100.dp),
+                    .padding(bottom = 70.dp),
                 ) {
                     Button(
                         onClick = { /*TODO*/ },
                         modifier = Modifier
-                            .width(130.dp)
+                            .width(180.dp)
+                            .padding(top = 15.dp, bottom = 15.dp)
+                            .padding(top = 15.dp, bottom = 15.dp)
                             .background(color = primaryColor)
                             .border(
                                 width = 1.dp,
                                 color = Color.White,
-                                shape = RoundedCornerShape(5.dp)
+                                shape = RoundedCornerShape(2.dp)
                             ),
                     ) {
                         Text(
@@ -153,12 +155,14 @@ fun MainLayout() {
                     }
                     Button(onClick = { /*TODO*/ },
                         modifier = Modifier
-                            .width(130.dp)
+                            .width(180.dp)
+                            .padding(top = 15.dp, bottom = 15.dp)
+                            .padding(top = 15.dp, bottom = 15.dp)
                             .background(color = primaryColor)
                             .border(
                                 width = 1.dp,
                                 color = Color.White,
-                                shape = RoundedCornerShape(5.dp)
+                                shape = RoundedCornerShape(2.dp)
                             ),
                         ) {
                         Text(
